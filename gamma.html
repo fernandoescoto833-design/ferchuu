@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GAMEVERSE - Plataforma Web de Videojuegos</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="gamma.css">
+</head>
+
+<body>
+
+<!-- ==========================================
+     NAVBAR
+========================================== -->
+
+<header class="navbar">
+
+    <div class="logo">
+        <i class="fa-solid fa-gamepad"></i>
+        GAME<span>VERSE</span>
+    </div>
+
+    <nav>
+        <ul class="nav-links">
+
+            <li>
+                <a href="#inicio" class="active">Inicio</a>
+            </li>
+
+            <li>
+                <a href="#catalogo">Videojuegos</a>
+            </li>
+
+            <li>
+                <a href="#ranking">Ranking</a>
+            </li>
+
+            <li>
+                <a href="#quiz-gamer">Quiz Gamer</a>
+            </li>
+
+            <li>
+                <a href="#noticias">Noticias</a>
+            </li>
+
+            <li>
+                <a href="#favoritos">Favoritos</a>
+            </li>
+
+            <li>
+                <a href="#perfil">Perfil</a>
+            </li>
+
+        </ul>
+    </nav>
+
+    <div class="nav-actions">
+
+        <button id="theme-toggle" class="btn-theme">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+
+        <a href="#perfil" class="user-avatar">
+            <img src="https://i.pravatar.cc/100?img=33" alt="Usuario">
+        </a>
+
+    </div>
+
+</header>
+
+
+<!-- ==========================================
+     HERO
+========================================== -->
+
+<section id="inicio" class="hero">
+
+    <div class="hero-content">
+
+        <span class="badge">
+            BIENVENIDO A GAMEVERSE
+        </span>
+
+        <h1>
+            Descubre tu próximo
+            <br>
+            <span class="text-neon">juego favorito</span>
+        </h1>
+
+        <p>
+            Explora un catálogo ilimitado, compite en rankings globales,
+            prueba tus conocimientos en nuestro Quiz Gamer y guarda tu
+            colección personalizada.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#catalogo" class="btn btn-primary">
+                <i class="fa-solid fa-compass"></i>
+                Explorar Videojuegos
+            </a>
+
+            <a href="#recomendador" class="btn btn-secondary">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                Recomendador de Juego
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     DESTACADOS
+========================================== -->
+
+<section class="container section">
+
+    <h2 class="section-title">
+        <i class="fa-solid fa-fire text-neon"></i>
+        Destacados de la Semana
+    </h2>
+
+    <div class="grid grid-4">
+
+        <!-- Juego 1 -->
+
+        <div class="card card-featured">
+
+            <div class="card-tag">
+                Destacado
+            </div>
+
+            <img
+                src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=500&auto=format&fit=crop"
+                alt="Cyber Strike"
+            >
+
+            <div class="card-body">
+
+                <span class="genre">
+                    Acción / Sci-Fi
+                </span>
+
+                <h3>
+                    Cyber Strike
+                </h3>
+
+                <p>
+                    Un shooter táctico ambientado en un futuro neón distópico.
+                </p>
+
+                <div class="card-footer">
+
+                    <span class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        4.9
+                    </span>
+
+                    <button class="btn-fav">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Juego 2 -->
+
+        <div class="card card-featured">
+
+            <div class="card-tag">
+                Top 1
+            </div>
+
+            <img
+                src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=500&auto=format&fit=crop"
+                alt="Myth Realm"
+            >
+
+            <div class="card-body">
+
+                <span class="genre">
+                    RPG / Fantasía
+                </span>
+
+                <h3>
+                    Myth Realm
+                </h3>
+
+                <p>
+                    Conquista reinos olvidados y forja tu propia leyenda épica.
+                </p>
+
+                <div class="card-footer">
+
+                    <span class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        4.8
+                    </span>
+
+                    <button class="btn-fav">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Juego 3 -->
+
+        <div class="card card-featured">
+
+            <div class="card-tag">
+                Nuevo
+            </div>
+
+            <img
+                src="https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=500&auto=format&fit=crop"
+                alt="Night Shift"
+            >
+
+            <div class="card-body">
+
+                <span class="genre">
+                    Terror / Supervivencia
+                </span>
+
+                <h3>
+                    Night Shift
+                </h3>
+
+                <p>
+                    Sobrevive a la noche en un complejo lleno de misterios oscuros.
+                </p>
+
+                <div class="card-footer">
+
+                    <span class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        4.7
+                    </span>
+
+                    <button class="btn-fav">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Juego 4 -->
+
+        <div class="card card-featured">
+
+            <div class="card-tag">
+                Tendencia
+            </div>
+
+            <img
+                src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=500&auto=format&fit=crop"
+                alt="Velocity Rush"
+            >
+
+            <div class="card-body">
+
+                <span class="genre">
+                    Carreras / Deportes
+                </span>
+
+                <h3>
+                    Velocity Rush
+                </h3>
+
+                <p>
+                    Carreras de alta velocidad a través de circuitos futuristas.
+                </p>
+
+                <div class="card-footer">
+
+                    <span class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        4.6
+                    </span>
+
+                    <button class="btn-fav">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     CATÁLOGO
+========================================== -->
+
+<section id="catalogo" class="container section">
+
+    <h2 class="section-title">
+        <i class="fa-solid fa-gamepad text-neon"></i>
+        Catálogo de Videojuegos
+    </h2>
+
+    <div class="search-bar-container">
+
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+
+        <input
+            type="text"
+            id="search-input"
+            placeholder="Buscar videojuegos por título..."
+        >
+
+    </div>
+
+
+    <div class="filter-buttons">
+
+        <button class="filter-btn active" data-filter="all">
+            Todos
+        </button>
+
+        <button class="filter-btn" data-filter="accion">
+            Acción
+        </button>
+
+        <button class="filter-btn" data-filter="rpg">
+            RPG
+        </button>
+
+        <button class="filter-btn" data-filter="terror">
+            Terror
+        </button>
+
+        <button class="filter-btn" data-filter="deportes">
+            Carreras
+        </button>
+
+    </div>
+
+
+    <div class="grid grid-3" id="games-grid">
+
+        <!-- Juego -->
+
+        <div class="card" data-category="rpg">
+
+            <img
+                src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=500&auto=format&fit=crop"
+                alt="Eldoria Saga"
+            >
+
+            <div class="card-body">
+
+                <span class="genre">
+                    RPG
+                </span>
+
+                <h3>
+                    Eldoria Saga
+                </h3>
+
+                <p>
+                    Mundo abierto masivo con combate en tiempo real.
+                </p>
+
+                <div class="card-footer">
+
+                    <span class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        4.9
+                    </span>
+
+                    <button class="btn-fav">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Juego -->
+
+        <div class="card" data-category="accion">
+
+            <img
+                src="https://images.unsplash.com/photo-1563089145-599997674d42?w=500&auto=format&fit=crop"
+                alt="Cybernetic Frontier"
+            >
+
+            <div class="card-body">
+
+                <span class="genre">
+                    Shooter / Acción
+                </span>
+
+                <h3>
+                    Cybernetic Frontier
+                </h3>
+
+                <p>
+                    Batallas multijugador con armas de alta tecnología.
+                </p>
+
+                <div class="card-footer">
+
+                    <span class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        4.8
+                    </span>
+
+                    <button class="btn-fav">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Juego -->
+
+        <div class="card" data-category="deportes">
+
+            <img
+                src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=500&auto=format&fit=crop"
+                alt="Nitro Drift Apex"
+            >
+
+            <div class="card-body">
+
+                <span class="genre">
+                    Carreras
+                </span>
+
+                <h3>
+                    Nitro Drift Apex
+                </h3>
+
+                <p>
+                    Siente la adrenalina del derrape en ciudades iluminadas por neón.
+                </p>
+
+                <div class="card-footer">
+
+                    <span class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        4.7
+                    </span>
+
+                    <button class="btn-fav">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Juego -->
+
+        <div class="card" data-category="terror">
+
+            <img
+                src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=500&auto=format&fit=crop"
+                alt="Dark Protocol"
+            >
+
+            <div class="card-body">
+
+                <span class="genre">
+                    Terror
+                </span>
+
+                <h3>
+                    Dark Protocol
+                </h3>
+
+                <p>
+                    Descubre los secretos de una instalación abandonada.
+                </p>
+
+                <div class="card-footer">
+
+                    <span class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        4.6
+                    </span>
+
+                    <button class="btn-fav">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Juego -->
+
+        <div class="card" data-category="accion">
+
+            <img
+                src="https://images.unsplash.com/photo-1542751110-97427bbecf20?w=500&auto=format&fit=crop"
+                alt="Neon Warriors"
+            >
+
+            <div class="card-body">
+
+                <span class="genre">
+                    Acción
+                </span>
+
+                <h3>
+                    Neon Warriors
+                </h3>
+
+                <p>
+                    Combates frenéticos entre guerreros de una ciudad futurista.
+                </p>
+
+                <div class="card-footer">
+
+                    <span class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        4.5
+                    </span>
+
+                    <button class="btn-fav">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Juego -->
+
+        <div class="card" data-category="rpg">
+
+            <img
+                src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=500&auto=format&fit=crop"
+                alt="Dragon Legacy"
+            >
+
+            <div class="card-body">
+
+                <span class="genre">
+                    RPG
+                </span>
+
+                <h3>
+                    Dragon Legacy
+                </h3>
+
+                <p>
+                    Explora un mundo fantástico lleno de criaturas legendarias.
+                </p>
+
+                <div class="card-footer">
+
+                    <span class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        4.4
+                    </span>
+
+                    <button class="btn-fav">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     RANKING
+========================================== -->
+
+<section id="ranking" class="container section">
+
+    <h2 class="section-title">
+        <i class="fa-solid fa-trophy text-neon"></i>
+        Top 10 Juegos Más Populares
+    </h2>
+
+    <div class="ranking-list">
+
+        <div class="ranking-item top-3">
+            <span class="rank-number">#1</span>
+            <div class="rank-info">
+                <h3>Cybernetic Frontier</h3>
+                <span>55 Millones de Jugadores</span>
+            </div>
+            <span class="rank-score">
+                <i class="fa-solid fa-star"></i> 4.9
+            </span>
+        </div>
+
+        <div class="ranking-item top-3">
+            <span class="rank-number">#2</span>
+            <div class="rank-info">
+                <h3>Eldoria Saga</h3>
+                <span>48 Millones de Jugadores</span>
+            </div>
+            <span class="rank-score">
+                <i class="fa-solid fa-star"></i> 4.8
+            </span>
+        </div>
+
+        <div class="ranking-item top-3">
+            <span class="rank-number">#3</span>
+            <div class="rank-info">
+                <h3>Nitro Drift Apex</h3>
+                <span>42 Millones de Jugadores</span>
+            </div>
+            <span class="rank-score">
+                <i class="fa-solid fa-star"></i> 4.7
+            </span>
+        </div>
+
+        <div class="ranking-item">
+            <span class="rank-number">#4</span>
+            <div class="rank-info">
+                <h3>Myth Realm</h3>
+                <span>39 Millones de Jugadores</span>
+            </div>
+            <span class="rank-score">★ 4.7</span>
+        </div>
+
+        <div class="ranking-item">
+            <span class="rank-number">#5</span>
+            <div class="rank-info">
+                <h3>Night Shift</h3>
+                <span>35 Millones de Jugadores</span>
+            </div>
+            <span class="rank-score">★ 4.6</span>
+        </div>
+
+        <div class="ranking-item">
+            <span class="rank-number">#6</span>
+            <div class="rank-info">
+                <h3>Neon Warriors</h3>
+                <span>31 Millones de Jugadores</span>
+            </div>
+            <span class="rank-score">★ 4.5</span>
+        </div>
+
+        <div class="ranking-item">
+            <span class="rank-number">#7</span>
+            <div class="rank-info">
+                <h3>Dragon Legacy</h3>
+                <span>29 Millones de Jugadores</span>
+            </div>
+            <span class="rank-score">★ 4.4</span>
+        </div>
+
+        <div class="ranking-item">
+            <span class="rank-number">#8</span>
+            <div class="rank-info">
+                <h3>Dark Protocol</h3>
+                <span>26 Millones de Jugadores</span>
+            </div>
+            <span class="rank-score">★ 4.3</span>
+        </div>
+
+        <div class="ranking-item">
+            <span class="rank-number">#9</span>
+            <div class="rank-info">
+                <h3>Velocity Rush</h3>
+                <span>23 Millones de Jugadores</span>
+            </div>
+            <span class="rank-score">★ 4.2</span>
+        </div>
+
+        <div class="ranking-item">
+            <span class="rank-number">#10</span>
+            <div class="rank-info">
+                <h3>Cyber Strike</h3>
+                <span>20 Millones de Jugadores</span>
+            </div>
+            <span class="rank-score">★ 4.1</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     RECOMENDADOR
+========================================== -->
+
+<section id="recomendador" class="container section">
+
+    <div class="recommend-box">
+
+        <h2 class="section-title">
+            <i class="fa-solid fa-wand-magic-sparkles text-neon"></i>
+            Recomendador de Juegos
+        </h2>
+
+        <p>
+            ¿No sabes qué jugar? Elige tu género favorito y descubre una recomendación.
+        </p>
+
+        <div class="recommend-buttons">
+
+            <button class="recommend-btn" data-recommend="accion">
+                <i class="fa-solid fa-crosshairs"></i>
+                Acción
+            </button>
+
+            <button class="recommend-btn" data-recommend="rpg">
+                <i class="fa-solid fa-dragon"></i>
+                RPG
+            </button>
+
+            <button class="recommend-btn" data-recommend="terror">
+                <i class="fa-solid fa-ghost"></i>
+                Terror
+            </button>
+
+            <button class="recommend-btn" data-recommend="deportes">
+                <i class="fa-solid fa-car"></i>
+                Carreras
+            </button>
+
+        </div>
+
+        <div id="recommendation-result" class="recommendation-result">
+            <i class="fa-solid fa-gamepad"></i>
+            Selecciona un género para recibir una recomendación.
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     QUIZ
+========================================== -->
+
+<section id="quiz-gamer" class="container section">
+
+    <div class="quiz-box">
+
+        <h2>
+            <i class="fa-solid fa-brain text-neon"></i>
+            Quiz Gamer: Demuestra tus Conocimientos
+        </h2>
+
+        <p>
+            Responde estas preguntas para evaluar tu nivel en la cultura de los videojuegos.
+        </p>
+
+        <div id="quiz-container">
+
+            <div class="quiz-question" id="question">
+                Cargando pregunta...
+            </div>
+
+            <div class="quiz-options" id="options">
+            </div>
+
+            <div id="quiz-feedback" class="feedback">
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     NOTICIAS
+========================================== -->
+
+<section id="noticias" class="container section">
+
+    <h2 class="section-title">
+        <i class="fa-solid fa-newspaper text-neon"></i>
+        Últimas Noticias Gamer
+    </h2>
+
+    <div class="grid grid-3">
+
+        <article class="news-card">
+
+            <div class="news-icon">
+                <i class="fa-solid fa-gamepad"></i>
+            </div>
+
+            <div class="news-body">
+
+                <span class="news-date">
+                    16 AGO 2026
+                </span>
+
+                <h3>
+                    Los nuevos lanzamientos que están sorprendiendo a los jugadores
+                </h3>
+
+                <p>
+                    Descubre los videojuegos que están ganando popularidad entre la comunidad gamer.
+                </p>
+
+                <a href="#catalogo" class="news-link">
+                    Ver juegos
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <article class="news-card">
+
+            <div class="news-icon">
+                <i class="fa-solid fa-trophy"></i>
+            </div>
+
+            <div class="news-body">
+
+                <span class="news-date">
+                    15 AGO 2026
+                </span>
+
+                <h3>
+                    Nuevos récords en el ranking de GAMEVERSE
+                </h3>
+
+                <p>
+                    Los jugadores compiten por alcanzar los primeros puestos de nuestra clasificación.
+                </p>
+
+                <a href="#ranking" class="news-link">
+                    Ver ranking
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <article class="news-card">
+
+            <div class="news-icon">
+                <i class="fa-solid fa-bolt"></i>
+            </div>
+
+            <div class="news-body">
+
+                <span class="news-date">
+                    14 AGO 2026
+                </span>
+
+                <h3>
+                    GAMEVERSE presenta nuevas funciones
+                </h3>
+
+                <p>
+                    Ahora puedes guardar tus videojuegos favoritos y recibir recomendaciones.
+                </p>
+
+                <a href="#favoritos" class="news-link">
+                    Ver favoritos
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     FAVORITOS
+========================================== -->
+
+<section id="favoritos" class="container section">
+
+    <h2 class="section-title">
+        <i class="fa-solid fa-heart text-neon"></i>
+        Mis Videojuegos Favoritos
+    </h2>
+
+    <div id="favorites-grid" class="grid grid-3">
+
+        <div class="empty-favorites">
+
+            <i class="fa-regular fa-heart"></i>
+
+            <h3>
+                Todavía no tienes favoritos
+            </h3>
+
+            <p>
+                Presiona el corazón ❤️ de cualquier juego para agregarlo aquí.
+            </p>
+
+            <a href="#catalogo" class="btn btn-primary">
+                Explorar videojuegos
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     PERFIL
+========================================== -->
+
+<section id="perfil" class="container section">
+
+    <h2 class="section-title">
+        <i class="fa-solid fa-user text-neon"></i>
+        Mi Perfil Gamer
+    </h2>
+
+    <div class="profile-card">
+
+        <div class="profile-header">
+
+            <img
+                src="https://i.pravatar.cc/150?img=33"
+                alt="ShadowNinja92"
+                class="profile-img"
+            >
+
+            <div class="profile-details">
+
+                <h3>
+                    ShadowNinja92
+                    <span class="badge-level">
+                        Nivel 45
+                    </span>
+                </h3>
+
+                <p>
+                    Gamer entusiasta de los RPG y Shooters tácticos.
+                </p>
+
+                <div class="xp-bar-container">
+
+                    <div
+                        class="xp-bar"
+                        style="width: 75%;"
+                    ></div>
+
+                </div>
+
+                <small>
+                    7,500 / 10,000 XP para el Nivel 46
+                </small>
+
+            </div>
+
+        </div>
+
+
+        <div class="profile-stats grid grid-3">
+
+            <div class="stat-box">
+
+                <h4>
+                    42
+                </h4>
+
+                <p>
+                    Juegos Completados
+                </p>
+
+            </div>
+
+
+            <div class="stat-box">
+
+                <h4>
+                    128
+                </h4>
+
+                <p>
+                    Logros Desbloqueados
+                </p>
+
+            </div>
+
+
+            <div class="stat-box">
+
+                <h4>
+                    1,240 hrs
+                </h4>
+
+                <p>
+                    Tiempo de Juego Total
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     FOOTER
+========================================== -->
+
+<footer>
+
+    <div class="container footer-content">
+
+        <p>
+            &copy; 2026 GAMEVERSE. Todos los derechos reservados.
+        </p>
+
+        <div class="social-links">
+
+            <a href="#" aria-label="Discord">
+                <i class="fa-brands fa-discord"></i>
+            </a>
+
+            <a href="#" aria-label="Twitch">
+                <i class="fa-brands fa-twitch"></i>
+            </a>
+
+            <a href="#" aria-label="YouTube">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+
+            <a href="#" aria-label="X">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- JAVASCRIPT -->
+
+<script src="gamma.js"></script>
+
+</body>
+</html>
